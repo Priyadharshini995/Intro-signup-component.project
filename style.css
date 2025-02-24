@@ -88,12 +88,11 @@ input {
     font-weight: 600;
     width: 85%;
     height: 3rem;
-    margin-top: 1rem;
-    padding-left: 1rem;
+    margin-top: 16px;
+    padding-left: 16px;
     border: 1px solid var(--gray-border);
     border-radius: 5px;
 }
-
 
 .btn_submit {
     font-size: 16px;
@@ -126,7 +125,8 @@ form a {
 .error {
     background: url("./img/icon-error.svg") no-repeat;
     background-position: 95% center;
-    background-size: 1.5rem 1.5rem;
+    background-size: 20px 20px;
+    
 }
 
 .form_error {
@@ -138,7 +138,7 @@ form a {
     color:var(--red);
     font-size: 0.7rem;
     font-weight: 500;
-}
+   }
 
 @media (min-width: 720px) {
 
@@ -164,8 +164,8 @@ form a {
 
     .forms_container {
         width: 49%;
-        max-width: 600px;
-        align-items: flex-start;
+        width: 600px;
+        
     }
 
     form {

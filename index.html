@@ -20,12 +20,16 @@
 <form id="form" novalidate>
   <input id="firstName" name="name" type="text"  placeholder="First Name" title="Input your First name"  required>
   <div class="form_error">First Name cannot be empty</div>
+  <label for="firstName" class="error"></label>
   <input id="lastName" name="lastName" type="text" placeholder="Last Name" title="Input your Last name" required>
   <div class="form_error">Last Name cannot be empty</div>
+  <label for="lastName" class="error"></label>
   <input id="email" name="email" type="email" placeholder="Email Address" title="Input your email" required>
   <div class="form_error">Looks like this is not an email</div>
+  <label for="email" class="error"></label>
   <input id="password" name="password" type="password" placeholder="Password" title="Input any password" required>
   <div class="form_error">Password cannot be empty</div>
+  <label for="password" class="error"></label>
   <input id="formSubmit" class="btn_submit" name="submit" type="submit" value="Claim your free trial">
   <p>By clicking the button, you are agreeing to our <a>Terms and Services</a></p>
 </form>
