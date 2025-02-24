@@ -122,12 +122,12 @@ form a {
     font-weight: 700;
 }
 
-.error {
+input.error  {
     background: url("./img/icon-error.svg") no-repeat;
     background-position: 95% center;
     background-size: 20px 20px;
-    
-}
+    border: 2px solid hsl(0, 100%, 74%);
+    }
 
 .form_error {
     display: none;

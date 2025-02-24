@@ -25,10 +25,11 @@ let input = document.getElementsByTagName("input");
       if((input.type != "email" || input.type != "submit") && input[i].value == ""){
       formError[i].style.display = "block";
       input[i].classList.add("error");
+      
       event.preventDefault();
       }
     }
     
   }
-
   form.addEventListener("submit", formValidation, false)
+
