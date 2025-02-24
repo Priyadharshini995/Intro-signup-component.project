@@ -1,3 +1,6 @@
+/* form validation
+- objevení vykřičníku a textu pod formulářem */
+
 var exclamation = document.getElementsByClassName("error");
 var form = document.getElementById("form");
 var firstName = document.getElementById("firstName");
