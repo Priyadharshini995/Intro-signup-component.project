@@ -1,5 +1,6 @@
 let exclamation = document.getElementsByClassName("error");
-let form = document.getElementById("form");let firstName = document.getElementById("firstName");
+let form = document.getElementById("form");
+let firstName = document.getElementById("firstName");
 let lastName = document.getElementById("lastName");
 let email = document.getElementById("email");
 let password = document.getElementById("password");
@@ -14,9 +15,7 @@ let input = document.getElementsByTagName("input");
     
       input[i].classList.remove("error");
       formError[i].style.display = "none";
-      formError[i].style.borderColor="red ";
-      
-
+         
       if (!email.validity.valid) {
         formError[2].style.display = "block";
         email.classList.add("error");
