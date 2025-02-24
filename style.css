@@ -8,11 +8,7 @@
     --shadow-red: hsl(0, 56%, 61%);
     --gray-border: rgb(224, 214, 214);
   }
-  *{
-    box-sizing: border-box;
-    margin: 0%;
-    padding:0%;
-  }
+ 
   
   body {
     font-family: "Poppins", sans-serif;
@@ -138,7 +134,7 @@
     background: url("./img/icon-error.svg") no-repeat;
     background-position: 95% center;
     background-size: 1.5rem 1.5rem;
-    border:2px solid hsl(0, 100%, 74%);
+    border:2px solid hsl(0, 100%, 74%)
   }
   
   .form_error {
