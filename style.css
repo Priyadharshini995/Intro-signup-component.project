@@ -7,57 +7,57 @@
     --grayish-blue: hsl(246, 25%, 77%);
     --shadow-red: hsl(0, 56%, 61%);
     --gray-border: rgb(224, 214, 214);
-}
-*{
+  }
+  *{
     box-sizing: border-box;
     margin: 0%;
-    padding: 0%;
-}
- body {
+    padding:0%;
+  }
+  
+  body {
     font-family: "Poppins", sans-serif;
     background: url("./img/bg-intro-mobile.png") no-repeat;
     background-size: cover;
-    background-color: hsl(0, 100%, 74%);
     padding: 0;
     margin: 0;
     font-size: 16px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    align-items: center;
+  }
+  
+  .page_container {
+    
     width: 100%;
-    }
-
-.page_container {
-    width: 100%;
+    background: rgba(255, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    
-   }
-
-.header {
+  }
+  
+  .header {
     color: white;
-}
-
-h1 {
-    
+  }
+  
+  h1 {
+    white-space: pre-line;
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 2.1rem;
     margin-top: 5rem;
-}
-
-p {
+  }
+  
+  p {
     margin: 0;
     margin-bottom: 4rem;
     padding: 0;
     font-weight: 400;
     line-height: 1.5rem;
     font-size: 0.9rem;
-}
-
-.btn_action{
+  }
+  
+  .btn_action {
     box-sizing: border-box;
     width: 100%;
     margin: 0;
@@ -68,16 +68,17 @@ p {
     padding: 1rem;
     box-shadow: 0px 7px 2px 0px var(--shadow-red);
     cursor: pointer;
-}
-
-.btn_action span {
+  }
+  
+  .btn_action span {
     font-family: "Poppins", sans-serif;
     margin: 0;
+    padding: 0 3rem;
     font-weight: 400;
     font-size: 0.9rem;
-}
-
-form {
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,13 +87,13 @@ form {
     margin: 2rem 0;
     border-radius: 0.5rem;
     box-shadow: 0px 7px 2px 0px var(--shadow-red);
-}
-
-input:first-of-type {
+  }
+  
+  input:first-of-type {
     margin-top: 1.5rem;
-}
-
-input {
+  }
+  
+  input {
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -102,14 +103,12 @@ input {
     padding-left: 1rem;
     border: 1px solid var(--gray-border);
     border-radius: 0.2rem;
-}
-
-input:focus {
-    border: 1px solid black;
-}
-
-.btn_submit {
+  }
+  
+ 
+  .btn_submit {
     font-size: 1rem;
+    letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: 500;
     box-sizing: border-box;
@@ -119,77 +118,75 @@ input:focus {
     box-shadow: 0px 1px 1px 3px var(--green-border);
     color: white;
     cursor: pointer;
-}
-
-form p {
+  }
+  
+  form p {
     font-size: 0.7rem;
     padding: 1rem 3rem;
     margin-bottom: 1rem;
     font-weight: 600;
     color: var(--grayish-blue);
     line-height: 1.5rem;
-}
-
-form a {
+  }
+  
+  form a {
     color: var(--red);
     font-weight: 700;
-}
-
-input.error {
+  }
+  
+  input.error {
     background: url("./img/icon-error.svg") no-repeat;
     background-position: 95% center;
     background-size: 1.5rem 1.5rem;
-    border: 2px solid hsl(0, 100%, 74%);
-}
-
-.form_error {
+    border:2px solid hsl(0, 100%, 74%);
+  }
+  
+  .form_error {
     display: none;
     margin-top: 0.3rem;
     box-sizing: border-box;
     width: 85%;
     text-align: end;
-    color:var(--red);
+    color: var(--red);
     font-size: 0.7rem;
     font-weight: 500;
-}
-
-@media (min-width: 720px) {
-
+  }
+  
+  @media screen and (min-width: 720px) {
     body {
-        background-repeat: repeat;
-        background-size: auto 50rem;
-        background-clip: border-box;
-       
-    }
+      background-repeat: repeat;
+      background-size: auto 50rem;
+      background-clip: border-box;
+      }
+  
     .page_container {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        height:100vh;
-       }
-
+      flex-direction: row;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+  
     .header {
-        width: 49%;
-        max-width: 30rem;
-        text-align: left;
-        padding-right: 1rem;
+      width: 49%;
+      max-width: 30rem;
+      text-align: left;
+      padding-right: 1rem;
     }
-
+  
     .forms_container {
-        width: 49%;
-        max-width: 35rem;
-        align-items: flex-start;
+      width: 49%;
+      max-width: 35rem;
+      align-items: flex-start;
     }
-
+  
     form {
-        padding: 1rem 0;
+      padding: 1rem 0;
     }
-
+  
     h1 {
-        font-weight: 700;
-        font-size: 3rem;
-        line-height: 3.5rem;
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 3.5rem;
     }
-
-    }
-   
+  }
+  
