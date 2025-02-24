@@ -27,7 +27,7 @@ let input = document.getElementsByTagName("input");
       input[i].classList.add("error");
       
       event.preventDefault();
-      }
+            }
     }
     
   }
